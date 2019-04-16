@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AllTasks>
+	<Task>
+		<!-- Expires 1 day old Files based on Created date -->
+		<TaskName>Expire1</TaskName>
+		<!-- ShortName for task -->
+		<TaskScope>c:\PARSER\AATEST\</TaskScope>
+		<!-- Task source directory -->
+		<ExpirationDirectory>c:\PARSER\BBTEST</ExpirationDirectory>
+		<!-- Task Destination directory (until files are deleted) -->
+		<ExpirationType>Created</ExpirationType>
+		<!-- task will use the Created, Accessed or Modified date -->
+		<ExpirationAge>1</ExpirationAge>
+		<!-- Move files older than XX Days -->
+		<ExpirationFinal>2</ExpirationFinal>
+		<!-- Delete files after XX Days -->
+	</Task>
+	<Task>
+		<!-- Expires 7 day old Files based on Accessed date-->
+		<TaskName>Expire2</TaskName>
+		<!-- ShortName for task -->
+		<TaskScope>c:\PARSER\AATEST\</TaskScope>
+		<!-- Task source directory -->
+		<ExpirationDirectory>c:\PARSER\BBTEST</ExpirationDirectory>
+		<!-- Task Destination directory (until files are deleted) -->
+		<ExpirationType>Accesed</ExpirationType>
+		<!-- task will use the Created, Accessed or Modified date -->
+		<ExpirationAge>7</ExpirationAge>
+		<!-- Move files older than XX Days -->
+		<ExpirationFinal>8</ExpirationFinal>
+		<!-- Delete files after XX Days -->
+	</Task>
+	<Task>
+		<!-- Expires 14 day old Files based on Modified date-->
+		<TaskName>Expire3</TaskName>
+		<!-- ShortName for task -->
+		<TaskScope>c:\PARSER\AATEST\</TaskScope>
+		<!-- Task source directory -->
+		<ExpirationDirectory>c:\PARSER\BBTEST</ExpirationDirectory>
+		<!-- Task Destination directory (until files are deleted) -->
+		<ExpirationType>Modified</ExpirationType>
+		<!-- task will use the Created, Accessed or Modified date -->
+		<ExpirationAge>14</ExpirationAge>
+		<!-- Move files older than XX Days -->
+		<ExpirationFinal>15</ExpirationFinal>
+		<!-- Delete files after XX Days -->
+	</Task>
+	<Engine>Engine 1.0</Engine></AllTasks>
