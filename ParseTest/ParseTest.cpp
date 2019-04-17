@@ -76,7 +76,6 @@ int main(int argc, char* argv[]) {
 
 
 
-
 				}
 
 				// The stuff below is the same as from the original sample program.
