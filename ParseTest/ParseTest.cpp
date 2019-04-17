@@ -39,27 +39,27 @@ int main(int argc, char* argv[]) {
 					// Query and print the values of all the known subtags to the current "aTask" object (using XPATH and their known tagnames)
 					const char* nodeName = "TaskName";
 					_bstr_t nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 					nodeName = "TaskScope";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 					nodeName = "ExpirationDirectory";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 					nodeName = "ExpirationType";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 					nodeName = "ExpirationAge";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 					nodeName = "ExpirationFinal";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("%s: %S\n", nodeName, nodeValue.GetBSTR());
+					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
 
 
 				}
