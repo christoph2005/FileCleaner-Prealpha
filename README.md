@@ -74,3 +74,10 @@ XML was successfully loaded
         "C:\\Users\\chris\\Documents\\Zoom"
 
 |>>>>>>>>>>>>>>>>>>>> Done Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<
+|>>>>>>>>>>>>>>>>>>>> Scanning Files for Dates <<<<<<<<<<<<<<<<<<<<
+
+Creation Time: 2018-12-30 2018 00:17:03Z
+Access Time: 2018-12-30 2018 00:17:03Z
+Modify Time: 2019-01-12 2019 01:24:59Z
+
+|>>>>>>>>>>>>>>>>>>>> Done Scanning Files for Dates <<<<<<<<<<<<<<<<<<<<
