@@ -3,10 +3,6 @@
 #include <iostream>
 #include <filesystem>
 
-ScanDirectoryForFilesTest::ScanDirectoryForFilesTest()
-{
-	throw 0;
-}
 
 ScanDirectoryForFilesTest::ScanDirectoryForFilesTest(const char* path)
 {

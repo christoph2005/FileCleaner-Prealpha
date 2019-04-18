@@ -116,7 +116,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FreeFunctions.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ReadFileDateTimes.cpp" />
     <ClCompile Include="ReadTaskDescriptionsFromXML.cpp" />
     <ClCompile Include="ScanDirectoryForFilesTest.cpp" />
   </ItemGroup>
@@ -130,6 +132,8 @@
     </Xsd>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FreeFunctions.h" />
+    <ClInclude Include="ReadFileDateTimes.h" />
     <ClInclude Include="ReadTaskDescriptionsFromXML.h" />
     <ClInclude Include="ScanDirectoryForFilesTest.h" />
   </ItemGroup>

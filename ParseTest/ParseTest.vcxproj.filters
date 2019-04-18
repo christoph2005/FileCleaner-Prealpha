@@ -24,6 +24,12 @@
     <ClCompile Include="ReadTaskDescriptionsFromXML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ReadFileDateTimes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xsd Include="ExpireTaskConfig.xml">
@@ -35,6 +41,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ReadTaskDescriptionsFromXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadFileDateTimes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
