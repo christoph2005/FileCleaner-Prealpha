@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ParseTest.cpp">
+    <ClCompile Include="ScanDirectoryForFilesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadTaskDescriptionsFromXML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,5 +29,13 @@
     <Xsd Include="ExpireTaskConfig.xml">
       <Filter>Resource Files</Filter>
     </Xsd>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ScanDirectoryForFilesTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadTaskDescriptionsFromXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

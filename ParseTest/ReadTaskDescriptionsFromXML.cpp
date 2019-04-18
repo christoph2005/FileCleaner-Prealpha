@@ -1,21 +1,20 @@
+#include "ReadTaskDescriptionsFromXML.h"
 // Opening an XML File and reading values for --- Expiration Tasks Project ---
-
-#include <stdio.h> 
-#include <tchar.h>
-#include <windows.h>
+#include <stdio.h> //- This is needed for the printf statements
+//#include <windows.h> //- This doesn't appear to be needed for the msxml6 library (not sure what it's for right now)
+#include <tchar.h> // - This appears to be NEEDED for the msxml6 library
 #import <msxml6.dll> rename_namespace(_T("MSXML"))
 
-#include <conio.h>
 
-
-int main(int argc, char* argv[]) {
+ReadTaskDescriptionsFromXML::ReadTaskDescriptionsFromXML()
+{
 	HRESULT hr = CoInitialize(NULL);
 	if (SUCCEEDED(hr)) {
 		try {
 			MSXML::IXMLDOMDocument2Ptr xmlDoc;
 			hr = xmlDoc.CreateInstance(__uuidof(MSXML::DOMDocument60),
 				NULL, CLSCTX_INPROC_SERVER);
-			// TODO: if (FAILED(hr))...
+			// TODO: if (FAILED(hr))... // I wonder if we actually need to be concerned about this...
 
 			if (xmlDoc->load(_T("ExpireTaskConfig.xml")) != VARIANT_TRUE) {
 				printf("Unable to load input.xml\n");
@@ -64,9 +63,9 @@ int main(int argc, char* argv[]) {
 
 				}
 
-				// The stuff below is the same as from the original sample program.
-				printf("\n\nConfig Value is %u \n", tasks->Getlength());
 
+
+				/* We don't need to do any of this for our purpose...
 				MSXML::IXMLDOMNodePtr node;
 				node = xmlDoc->createNode(MSXML::NODE_ELEMENT, _T("Engine"), _T(""));
 				node->text = _T("Engine 1.0");
@@ -74,6 +73,7 @@ int main(int argc, char* argv[]) {
 				hr = xmlDoc->save(_T("output.xml"));
 				if (SUCCEEDED(hr))
 					printf("output.xml successfully saved\n");
+				*/
 			}
 		}
 		catch (_com_error & e) {
@@ -81,7 +81,9 @@ int main(int argc, char* argv[]) {
 		}
 		CoUninitialize();
 	}
+}
 
-	_getch();
-	return 0;
+
+ReadTaskDescriptionsFromXML::~ReadTaskDescriptionsFromXML()
+{
 }
