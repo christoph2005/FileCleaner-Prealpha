@@ -6,7 +6,7 @@ Repository location: https://github.com/christoph2005/FileCleaner-Prealpha.git
 The output of the program as of the initial commit is below.
 This is to give you an idea of how the project is able to "get" the data and "do something" with it, i.e. "display it in pieces".
 
->>>>>>>>>>>>>>>>>>>> Reading the XML File <<<<<<<<<<<<<<<<<<<<
+|>>>>>>>>>>>>>>>>>>>> Reading the XML File <<<<<<<<<<<<<<<<<<<<
 
 XML was successfully loaded
 
@@ -40,8 +40,8 @@ XML was successfully loaded
         ExpirationAge: 14
         ExpirationFinal: 15
 
->>>>>>>>>>>>>>>>>>>> Reading the Done Reading XML File <<<<<<<<<<<<<<<<<<<<
->>>>>>>>>>>>>>>>>>>> Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<
+|>>>>>>>>>>>>>>>>>>>> Done Reading XML File <<<<<<<<<<<<<<<<<<<<
+|>>>>>>>>>>>>>>>>>>>> Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<
 
         "C:\\Users\\chris\\Documents\\106APPLE"
         "C:\\Users\\chris\\Documents\\Adobe"
@@ -73,4 +73,4 @@ XML was successfully loaded
         "C:\\Users\\chris\\Documents\\Visual Studio 2017"
         "C:\\Users\\chris\\Documents\\Zoom"
 
->>>>>>>>>>>>>>>>>>>> Done Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<
+|>>>>>>>>>>>>>>>>>>>> Done Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<
