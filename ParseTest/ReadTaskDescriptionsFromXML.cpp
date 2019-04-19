@@ -2,6 +2,8 @@
 // Opening an XML File and reading values for --- Expiration Tasks Project ---
 #include <stdio.h> //- This is needed for the printf statements
 //#include <windows.h> //- This doesn't appear to be needed for the msxml6 library (not sure what it's for right now)
+#include "Task.h"
+
 #include <tchar.h> // - This appears to be NEEDED for the msxml6 library
 #import <msxml6.dll> rename_namespace(_T("MSXML"))
 
@@ -31,9 +33,7 @@ ReadTaskDescriptionsFromXML::ReadTaskDescriptionsFromXML()
 					// ATask is the "i-th" "Node" that matched the "selectNodes" query above; numbered [0, 1, 2, 3, ..., i, ..., tasks->GetLength()]
 					// Lamens: "ATask" represents one task at a time, out of all the Tasks defined in the XML, and every time the loop iterates it represents the "next task"
 					MSXML::IXMLDOMNodePtr aTask = tasks->Getitem(i);
-
-					// Print a separating line above the data for readability:
-					printf("\n\n================== Task Item #%i ==============: \n\n", i);
+/*
 
 					// Query and print the values of all the known subtags to the current "aTask" object (using XPATH and their known tagnames)
 					const char* nodeName = "TaskName";
@@ -59,8 +59,19 @@ ReadTaskDescriptionsFromXML::ReadTaskDescriptionsFromXML()
 					nodeName = "ExpirationFinal";
 					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
 					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
+*/
+					// Print a separating line above the data for readability:
+					printf("\n\n================== Task Item #%i ==============: \n\n", i);
 
-
+					Task T = Task(
+						aTask->selectSingleNode("TaskName")->Gettext(),
+						aTask->selectSingleNode("TaskScope")->Gettext(),
+						aTask->selectSingleNode("ExpirationDirectory")->Gettext(),
+						aTask->selectSingleNode("ExpirationType")->Gettext(),
+						aTask->selectSingleNode("ExpirationAge")->Gettext(),
+						aTask->selectSingleNode("ExpirationFinal")->Gettext()
+					);
+					// T.Execute()?
 				}
 
 
