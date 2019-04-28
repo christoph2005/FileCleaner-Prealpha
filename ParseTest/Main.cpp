@@ -9,15 +9,16 @@ int main(int argc, char* argv[]) {
 	new ReadTaskDescriptionsFromXML();
 	printf("\n|>>>>>>>>>>>>>>>>>>>> Done Reading XML File <<<<<<<<<<<<<<<<<<<<\n");
 
+	/*
 
 	printf("|>>>>>>>>>>>>>>>>>>>> Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<\n\n");
 	new ScanDirectoryForFilesTest("C:\\Users\\chris\\Documents");
 	printf("\n|>>>>>>>>>>>>>>>>>>>> Done Scanning Directory for Files <<<<<<<<<<<<<<<<<<<<\n");
 
-
 	printf("|>>>>>>>>>>>>>>>>>>>> Scanning Files for Dates <<<<<<<<<<<<<<<<<<<<\n\n");
 	new ReadFileDateTimes("C:\\Users\\chris\\Documents\\TempTitle.txt");
 	printf("\n|>>>>>>>>>>>>>>>>>>>> Done Scanning Files for Dates <<<<<<<<<<<<<<<<<<<<\n");
+	//*/
 
 	return 0;
 }

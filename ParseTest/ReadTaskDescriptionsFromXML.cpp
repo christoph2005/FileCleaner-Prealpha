@@ -33,33 +33,7 @@ ReadTaskDescriptionsFromXML::ReadTaskDescriptionsFromXML()
 					// ATask is the "i-th" "Node" that matched the "selectNodes" query above; numbered [0, 1, 2, 3, ..., i, ..., tasks->GetLength()]
 					// Lamens: "ATask" represents one task at a time, out of all the Tasks defined in the XML, and every time the loop iterates it represents the "next task"
 					MSXML::IXMLDOMNodePtr aTask = tasks->Getitem(i);
-/*
 
-					// Query and print the values of all the known subtags to the current "aTask" object (using XPATH and their known tagnames)
-					const char* nodeName = "TaskName";
-					_bstr_t nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-
-					nodeName = "TaskScope";
-					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-
-					nodeName = "ExpirationDirectory";
-					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-
-					nodeName = "ExpirationType";
-					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-
-					nodeName = "ExpirationAge";
-					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-
-					nodeName = "ExpirationFinal";
-					nodeValue = aTask->selectSingleNode(nodeName)->Gettext();
-					printf("\t%s: %S\n", nodeName, nodeValue.GetBSTR());
-*/
 					// Print a separating line above the data for readability:
 					printf("\n\n================== Task Item #%i ==============: \n\n", i);
 
@@ -71,7 +45,7 @@ ReadTaskDescriptionsFromXML::ReadTaskDescriptionsFromXML()
 						aTask->selectSingleNode("ExpirationAge")->Gettext(),
 						aTask->selectSingleNode("ExpirationFinal")->Gettext()
 					);
-					// T.Execute()?
+					T.Execute();
 				}
 
 
